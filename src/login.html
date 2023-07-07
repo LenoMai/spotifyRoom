@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/purple-smile" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://emoji.discadia.com/emojis/4295f50a-65d6-457b-ba37-0415e6b12e47.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Sproom</title>
+
+    <script>
+        function handleSpotifyLogin() {
+          // Perform the authorization process
+          // Redirect the user to the Spotify authorization endpoint
+          window.location.href = 'https://accounts.spotify.com/authorize?client_id=8066cb0e933e4d598b90cac95b4181c6&response_type=code&redirect_uri=&scope=YOUR_SCOPES';
+        }
+      </script>
+</head>
+  <body> 
+
+      <header class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+      </header>
+
+
+      <div id="name">
+        <h1 id="title">Welcome to Sproom!</h1>
+        <h2 id="subtitle"> Turn your music taste into a room! </h2>
+      </div>
+
+      <div id="button-container">
+          <div id="signInButton">
+            <button id="spotify-login-btn" onclick="handleSpotifyLogin()">
+              <i class="fa-brands fa-spotify"></i>
+              <a href="" class="login-btn">Log in with Spotify</a>
+            </button>
+          </div>
+      </div>
+
+      <div class="navbar">
+        <a href="#About" class="active">About</a>
+        <a href="#PrivacyPolicy">Privacy Policy</a>
+      </div>
+
+  </body>
+</html>
